@@ -66,5 +66,5 @@ This project provides a Streamlit application that fetches news articles based o
 
 You can also use the deployed application on Hugging Face Spaces:
 
-[News Summarizer and Sentiment Analyzer](https://huggingface.co/spaces/Mulla88/News-summarizer-sentiment)
+[News Summarizer and Sentiment Analyzer](https://huggingface.co/spaces/Mulla88/News-summarizer-sentiment-project)
 
