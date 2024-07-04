@@ -5,6 +5,6 @@ __pycache__
 *.pyc
 .pyo
 error.log
-FinalReport.docx
+*.docx
 group2_fin_model/
 HuggingFace/
