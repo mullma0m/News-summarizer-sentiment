@@ -1,0 +1,8 @@
+results/
+wandb/
+.env
+__pycache__
+*.pyc
+.pyo
+error.log
+FinalReport.docx
