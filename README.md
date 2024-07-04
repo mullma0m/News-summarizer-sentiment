@@ -68,14 +68,3 @@ You can also use the deployed application on Hugging Face Spaces:
 
 [News Summarizer and Sentiment Analyzer](https://huggingface.co/spaces/Mulla88/News-summarizer-sentiment)
 
-## Repository Structure
-
-- `streamlit_app.py`: Main Streamlit application script.
-- `model.ipynb`: Jupyter notebook used to create and train the sentiment analysis model.
-- `group2_fin_model/`: Directory containing the saved model.
-- `.gitignore`: Specifies files and directories to be ignored by Git.
-- `README.md`: Description and instructions for the project.
-- `.env`: Environment file containing API keys (not included in the repository).
-- `requirements.txt`: List of dependencies required for the project.
-
-
