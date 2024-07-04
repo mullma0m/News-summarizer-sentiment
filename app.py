@@ -148,7 +148,7 @@ if st.session_state.fetching_news and ticker:
                             news_article.download()
                             news_article.parse()
                             
-                            # Summarize and analyze sentiment
+                            # Summarize and analyze the sentiment
                             summarizer = pipeline("summarization", model=summarization_model)
                             summary = summarizer(news_article.text, max_length=max_length, min_length=min_length, do_sample=False)[0]['summary_text']
                             
