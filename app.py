@@ -163,7 +163,7 @@ if st.session_state.fetching_news and ticker:
                             sentiment_label = sentiment_analyzer(summary)[0]['label']
                             unified_sentiment = map_sentiment(sentiment_label, sentiment_model)
                             
-                            # Display the article information
+                            # Display article information
                             st.subheader(f"**Title:** {title}")
                             st.write(f"(*API Source: {api_source}*, *Actual Source: {actual_source}*)")
                             st.write(f"**Date:** {published_at.strftime('%Y-%m-%d %H:%M:%S')}")
