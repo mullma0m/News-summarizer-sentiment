@@ -55,7 +55,7 @@ def map_sentiment(label, model_name):
             '1 star': 'Negative', '2 stars': 'Negative', '3 stars': 'Neutral', 
             '4 stars': 'Positive', '5 stars': 'Positive'
         },
-        'group2-fin-model': {'LABEL_2': 'Positive', 'LABEL_0': 'Negative', 'LABEL_1': 'Neutral'}
+        'Mulla88/group2_fin_model': {'LABEL_2': 'Positive', 'LABEL_0': 'Negative', 'LABEL_1': 'Neutral'}
     }
     
     # Default return label if the model or label mapping does not exist
@@ -90,7 +90,7 @@ sentiment_model = st.selectbox('Choose a sentiment analysis model', [
     'finiteautomata/bertweet-base-sentiment-analysis',
     'cardiffnlp/twitter-roberta-base-sentiment',
     'nlptown/bert-base-multilingual-uncased-sentiment',
-    'group2-fin-model'
+    'Mulla88/group2_fin_model'
 ])
 
 # Customizable parameters
@@ -152,10 +152,10 @@ if st.session_state.fetching_news and ticker:
                             summarizer = pipeline("summarization", model=summarization_model)
                             summary = summarizer(news_article.text, max_length=max_length, min_length=min_length, do_sample=False)[0]['summary_text']
                             
-                            if sentiment_model == 'group2-fin-model':
-                                custom_model_path = './group2_fin_model'
-                                custom_tokenizer = AutoTokenizer.from_pretrained(custom_model_path)
-                                custom_model = AutoModelForSequenceClassification.from_pretrained(custom_model_path)
+                            if sentiment_model == 'Mulla88/group2_fin_model':
+                                custom_model_name = 'Mulla88/group2_fin_model'
+                                custom_tokenizer = AutoTokenizer.from_pretrained(custom_model_name)
+                                custom_model = AutoModelForSequenceClassification.from_pretrained(custom_model_name)
                                 sentiment_analyzer = pipeline("sentiment-analysis", model=custom_model, tokenizer=custom_tokenizer)
                             else:
                                 sentiment_analyzer = pipeline("sentiment-analysis", model=sentiment_model)
