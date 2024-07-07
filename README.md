@@ -40,9 +40,6 @@ This project provides a Streamlit application that fetches news articles based o
 
 6. **Ensure the following directories and files are present**:
     - `app.py` (your Streamlit application)
-    - `model.ipynb` (your Jupyter notebook for creating the best model)
-    - `group2_fin_model/` (the folder containing your trained model)
-    - `.gitignore` (to exclude unnecessary files and folders)
     - `README.md` (description of your project)
     - `.env` (containing your API keys)
     - `requirements.txt` (to list all dependencies required for your project)
