@@ -40,13 +40,11 @@ This project provides a Streamlit application that fetches news articles based o
 
 6. **Ensure the following directories and files are present**:
     - `app.py` (your Streamlit application)
-    - `README.md` (description of your project)
     - `.env` (containing your API keys)
-    - `requirements.txt` (to list all dependencies required for your project)
 
 ## Usage
 
-1. **Run the Streamlit application**:
+1. **Run the Streamlit application (Make sure you are in the same directory as the files)**:
     ```bash
     streamlit run app.py
     ```
