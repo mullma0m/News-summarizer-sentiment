@@ -39,7 +39,7 @@ This project provides a Streamlit application that fetches news articles based o
     ```
 
 6. **Ensure the following directories and files are present**:
-    - `streamlit_app.py` (your Streamlit application)
+    - `app.py` (your Streamlit application)
     - `model.ipynb` (your Jupyter notebook for creating the best model)
     - `group2_fin_model/` (the folder containing your trained model)
     - `.gitignore` (to exclude unnecessary files and folders)
@@ -51,7 +51,7 @@ This project provides a Streamlit application that fetches news articles based o
 
 1. **Run the Streamlit application**:
     ```bash
-    streamlit run streamlit_app.py
+    streamlit run app.py
     ```
 
 2. **Open your web browser** and navigate to `http://localhost:8501`.
