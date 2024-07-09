@@ -2,7 +2,7 @@
 
 This project provides a Streamlit application that fetches news articles based on a ticker symbol, summarizes the articles, and analyzes their sentiment. It integrates with FinnHub and NewsAPI to fetch news articles and uses pre-trained models from Hugging Face for summarization and sentiment analysis.
 
-## Featuresss
+## Features
 
 - Fetches news articles based on a ticker symbol from FinnHub and NewsAPI.
 - Summarizes news articles using pre-trained models from Hugging Face.
